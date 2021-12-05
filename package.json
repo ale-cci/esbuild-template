@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "www-aoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rm -rf ./build && node build.js build",
+    "dev": "node build.js serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.2",
+    "esbuild-jest": "^0.5.0",
+    "jest": "^27.4.3"
+  },
+  "jest": {
+    "transform": {
+      "\\.js$": "esbuild-jest"
+    }
+  },
+  "dependencies": {
+    "esbuild-sass-plugin": "^1.8.0"
+  }
+}
