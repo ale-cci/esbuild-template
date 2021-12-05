@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# TODO: replace project name, set git hooks, and so on
+# git init && git commit -am 'Initial commit'
+rm configure
+
