@@ -1,18 +1,17 @@
 {
   "type": "module",
-  "name": "www-aoc",
+  "name": "esbuild-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/js/index.js",
   "scripts": {
     "test": "jest",
     "build": "rm -rf ./build && node build.js build",
     "dev": "node build.js serve"
   },
-  "author": "",
+  "author": "ale-cci",
   "license": "ISC",
   "devDependencies": {
-    "esbuild": "^0.14.2",
     "esbuild-jest": "^0.5.0",
     "eslint": "^8.4.0",
     "jest": "^27.4.3"
@@ -23,6 +22,7 @@
     }
   },
   "dependencies": {
+    "esbuild": "^0.14.2",
     "esbuild-sass-plugin": "^1.8.0"
   }
 }
