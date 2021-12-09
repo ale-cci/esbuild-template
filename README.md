@@ -10,3 +10,9 @@ bash <(curl https://raw.githubusercontent.com/ale-cci/esbuild-template/master/co
 - Unittest framework: `jest`
 - Bundler: `esbuild`
 - Linter: `eslint`
+
+### Commands:
+- `npm run test` test files
+- `npm run test -- --watch` watch tests
+- `npm run dev` start dev server
+- `npm run build` production build
