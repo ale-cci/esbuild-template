@@ -2,6 +2,7 @@ env:
   node: true
   browser: true
   es2021: true
+  jest/globals: true
 extends: eslint:recommended
 parserOptions:
   ecmaVersion: 2021
@@ -19,6 +20,5 @@ rules:
   semi:
     - error
     - never
-  jest/globals: true
 plugins:
   - jest
