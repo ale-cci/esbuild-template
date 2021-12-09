@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 echo -n "Project name: "
 read project_name
+
+project_name=`echo $project_name | xargs | tr -s ' ' '_'`
 echo "Project-name: $project_name"
 
 npx degit ale-cci/esbuild-template "$project_name"
