@@ -3,11 +3,7 @@
 
 ### Setup
 ```bash
-$ npx degit ale-cci/esbuild-template <PROJECT-NAME>
-$ cd <PROJECT-NAME>
-$ ./configure
-$ git init
-$ git config core.hooksPath '.git-hooks'
+$ curl https://raw.githubusercontent.com/ale-cci/esbuild-template/master/configure | bash
 ```
 
 ### About

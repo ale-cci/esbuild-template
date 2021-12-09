@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
-# TODO: replace project name, set git hooks, and so on
-# git init && git commit -am 'Initial commit'
-rm configure
+echo -n "Project name: "
+read project_name
+echo "Project-name: $project_name"
 
+npx degit ale-cci/esbuild-template "$project_name"
+pushd "$project_name"
+
+rm ./configure
+echo "# $project_name\n> Author: $USER" > ./README.md
+
+git init
+git config core.hooksPath ".git-hooks"
+git add . && git commit -m "Inital commit"
