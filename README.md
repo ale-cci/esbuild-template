@@ -3,7 +3,7 @@
 
 ### Setup
 ```bash
-curl https://raw.githubusercontent.com/ale-cci/esbuild-template/master/configure | bash
+bash <(curl https://raw.githubusercontent.com/ale-cci/esbuild-template/master/configure)
 ```
 
 ### About

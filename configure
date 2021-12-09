@@ -2,6 +2,8 @@
 echo -n "Project name: "
 read project_name
 
+[ -z "$project_name" ] && echo "Project name could not be empty" && exit 1
+
 project_name=`echo $project_name | xargs | tr -s ' ' '_'`
 echo "Project-name: $project_name"
 
