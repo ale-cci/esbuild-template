@@ -11,7 +11,7 @@ npx degit ale-cci/esbuild-template "$project_name"
 pushd "$project_name"
 
 rm ./configure
-echo "# $project_name\n> Author: $USER" > ./README.md
+printf "# $project_name\n> Author: $USER" > ./README.md
 
 npm install --save-dev
 git init
