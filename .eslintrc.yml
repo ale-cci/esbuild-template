@@ -19,3 +19,6 @@ rules:
   semi:
     - error
     - never
+  jest/globals: true
+plugins:
+  - jest
