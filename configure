@@ -9,6 +9,7 @@ pushd "$project_name"
 rm ./configure
 echo "# $project_name\n> Author: $USER" > ./README.md
 
+npm install --save-dev
 git init
 git config core.hooksPath ".git-hooks"
 git add . && git commit -m "Inital commit"
